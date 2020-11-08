@@ -40,7 +40,7 @@
 	#Should workers work during the rain? [Default: false]
 	workersalwaysworkinrain = false
 	#Should player made schematics be allowed [Default: false]
-	allowplayerschematics = false
+	allowplayerschematics = true
 	#Quantity of dirt per Compost filling. [Default: 1]
 	#Range: 0 ~ 100
 	dirtfromcompost = 1
@@ -57,7 +57,7 @@
 	#Range: 0.0 ~ 100.0
 	fisherspongechance = 0.1
 	#Should Players be sent entering/leaving colony notifications? [Default: true]
-	sendenteringleavingmessages = true
+	sendenteringleavingmessages = false
 	#Should players be allowed to change names? -1 for false, 0 for specific groups, 1 for true. [Default: 1]
 	#Range: -1 ~ 1
 	allowglobalnamechanges = 1
@@ -70,7 +70,7 @@
 	#If the builder should be slower underground or as fast as anywhere else. [Default: true]
 	restrictbuilderunderground = true
 	#Should there be at max 1 warehouse per colony?. [Default: true]
-	limittoonewarehousepercolony = true
+	limittoonewarehousepercolony = false
 	#Should player get one guidebook on first join to a new world? [Default: true]
 	playergetsguidebookonfirstjoin = true
 	#Chance to get a lucky block in percent. [Default: 1]
@@ -84,7 +84,7 @@
 	#Range: 0 ~ 5
 	minthleveltoteleport = 3
 	#Disable citizen voices. [Default: false]
-	disablecitizenvoices = false
+	disablecitizenvoices = true
 
 #All configurations related to the Minecolonies commands
 [commands]
@@ -104,7 +104,7 @@
 	canplayerusedeletecolonycommand = true
 	#Sets the amount of hours until a colony will be deleted after not seeing it's mayor, set to zero to disable. [Default: 0]
 	#Range: 168 ~ 10000
-	autodeletecoloniesinhours = 168
+	autodeletecoloniesinhours = 0
 	#Should the player be allowed to use the '/mc colony info' command? [Default: true]
 	canplayeruseshowcolonyinfocommand = true
 	#Should the player be allowed to use the '/mc colony addOfficer' command? [Default: true]
@@ -113,9 +113,9 @@
 	#Range: 30 ~ 99999
 	teleportbuffer = 120
 	#Should the player be allowed to use the '/mc home' command? [Default: true]
-	canplayerusehometpcommand = true
+	canplayerusehometpcommand = false
 	#Can Player Teleport to allied colonies? [Default:true]
-	canplayeruseallytownhallteleport = true
+	canplayeruseallytownhallteleport = false
 	#Should the player be allowed to use the '/mc citizens kill' command? [Default: true]
 	canplayerusekillcitizenscommand = true
 
@@ -173,7 +173,7 @@
 	#Range: 0.1 ~ 5.0
 	knightdamagemult = 1.0
 	#Turn on Minecolonies pvp mode, attention (colonies can be destroyed and can be griefed under certain conditions). [Default: false]
-	pvp_mode = false
+	pvp_mode = true
 	#minecolonies.config.shouldraiderbreakdoors.comment
 	shouldraiderbreakdoors = true
 	#Max Y level for Barbarians to spawn. [Default: 200]
@@ -195,9 +195,9 @@
 	#Blocks players should be able to final ForgeConfigSpec.IntValueeract with in any colony (Ex vending machines)
 	freetointeractblocks = ["dirt", "0 0 0"]
 	#Should the colony protection be enabled? [Default: true]
-	enablecolonyprotection = true
+	enablecolonyprotection = false
 	#Independent from the colony protection, should explosions be turned off? [Default: true]
-	turnoffexplosionsincolonies = true
+	turnoffexplosionsincolonies = false
 	#Seconds between permission messages. [Default: 30]
 	#Range: 1 ~ 1000
 	secondsBetweenPermissionMessages = 30
