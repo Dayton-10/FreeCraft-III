@@ -48,7 +48,7 @@
 	#Range: 1 ~ 100
 	chatfrequency = 30
 	#Food consumption modifier (Min: 1.0). [Default: 1.0]
-	#Range: 0.0 ~ 100.0
+	#Range: 0.1 ~ 100.0
 	foodmodifier = 1.0
 	#Delay modifier to mine a block (Decreasing it, decreases the delay) [Default: 500]
 	#Range: 1 ~ 10000
@@ -104,7 +104,7 @@
 	canplayerusedeletecolonycommand = true
 	#Sets the amount of hours until a colony will be deleted after not seeing it's mayor, set to zero to disable. [Default: 0]
 	#Range: 168 ~ 10000
-	autodeletecoloniesinhours = 0
+	autodeletecoloniesinhours = 168
 	#Should the player be allowed to use the '/mc colony info' command? [Default: true]
 	canplayeruseshowcolonyinfocommand = true
 	#Should the player be allowed to use the '/mc colony addOfficer' command? [Default: true]
@@ -234,10 +234,14 @@
 	#Harvest trunk-size for dynamic trees:1-8. [Default: 5]
 	#Range: 1 ~ 5
 	dynamictreeharvestsize = 5
+	#minecolonies.config.debuginventories.comment
+	debuginventories = false
 	#minecolonies.config.luckyores.comment
 	luckyores = ["minecraft:coal_ore!64", "minecraft:iron_ore!32", "minecraft:gold_ore!16", "minecraft:redstone_ore!8", "minecraft:lapis_ore!4", "minecraft:diamond_ore!2", "minecraft:emerald_ore!1"]
 	#minecolonies.config.luckyblocks.comment
 	luckyblocks = ["minecraft:stone", "minecraft:cobblestone"]
+	#minecolonies.config.configlistrecruitmentitems.comment
+	configlistrecruitmentitems = ["minecraft:hay_block;2", "minecraft:book;2", "minecraft:diamond;7", "minecraft:emerald;10", "minecraft:baked_potato;1", "minecraft:gold;3", "minecraft:redstone;2", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;4"]
 
 #All configurations related to pathfinding
 [pathfinding]
@@ -353,6 +357,8 @@
 	reinforced = ["minecraft:diamond*32"]
 	#minecolonies.config.resistance.comment
 	resistance = ["minecraft:golden_apple*1"]
+	#minecolonies.config.gildedhammer.comment
+	gildedhammer = ["minecraft:gravel*64", "minecraft:sand*64", "minecraft:clay*64"]
 	#minecolonies.config.evasion.comment
 	evasion = ["minecraft:leather*64"]
 	#minecolonies.config.agile.comment
@@ -375,6 +381,8 @@
 	hot = ["minecraft:lava_bucket*4"]
 	#minecolonies.config.tools.comment
 	tools = ["minecraft:iron_ingot*256"]
+	#minecolonies.config.hotboots.comment
+	hotboots = ["minecraft:leather*32", "minecraft:iron_ingot*16"]
 	#minecolonies.config.capacity.comment
 	capacity = ["minecolonies:blockminecoloniesrack*32"]
 	#minecolonies.config.livesaver2.comment
@@ -409,6 +417,8 @@
 	thoselungs = ["minecraft:glass*64"]
 	#minecolonies.config.dodge.comment
 	dodge = ["minecraft:leather*16"]
+	#minecolonies.config.pavetheroad.comment
+	pavetheroad = ["minecraft:white_concrete*32"]
 	#minecolonies.config.recipebook.comment
 	recipebook = ["minecraft:paper*128"]
 	#minecolonies.config.beanstalk.comment
@@ -515,6 +525,8 @@
 	redstonepowered = ["minecraft:redstone*256"]
 	#minecolonies.config.powerattack.comment
 	powerattack = ["minecraft:iron_block*4"]
+	#minecolonies.config.doubletrouble.comment
+	doubletrouble = ["minecraft:bamboo*64", "minecraft:sugar_cane*64", "minecraft:cactus*64"]
 	#minecolonies.config.hotfoot.comment
 	hotfoot = ["minecraft:emerald*64"]
 	#minecolonies.config.gourmand.comment
@@ -577,6 +589,8 @@
 	indefatigability = ["minecraft:golden_apple*64"]
 	#minecolonies.config.avoid.comment
 	avoid = ["minecraft:emerald*8"]
+	#minecolonies.config.taunt.comment
+	taunt = ["minecraft:rotten_flesh*8", "minecraft:bone*8", "minecraft:spider_eye*8"]
 	#minecolonies.config.outpost.comment
 	outpost = ["minecraft:cooked_beef*64"]
 
