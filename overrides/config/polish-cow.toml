@@ -1,0 +1,4 @@
+#Time in seconds until the cow dies.
+#Range: 20.0 ~ 240.0
+dance_time = 30.0
+

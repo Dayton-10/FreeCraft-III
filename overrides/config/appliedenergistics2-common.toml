@@ -66,12 +66,13 @@
 	matterCannon = 200000
 
 [worldGen]
-	meteoriteDimensionWhitelist = ["minecraft:overworld"]
 	quartzOresClusterAmount = 20
 	quartzOresPerCluster = 4
 	meteoriteMaximumSpawnHeight = 64
 	#Range: 0.0 ~ 1.0
 	spawnChargedChance = 0.08
+	meteoriteBiomeBlacklist = []
+	quartzOresBiomeBlacklist = []
 
 [wireless]
 	wirelessTerminalDrainMultiplier = 1.0
@@ -128,4 +129,12 @@
 	PressureTunnelMin = 1
 	FluidExportBusMin = 5
 	VibrationChamberMin = 10
+
+#Settings for in-world purification of crystals.
+[inWorldPurification]
+	#A fluid tag that identifies fluids that improve crystal purification speed. Does not affect purification with water/lava.
+	improvedFluidTag = ""
+	#The speed multiplier to use when the crystals are submerged in the improved fluid.
+	#Range: 1.0 ~ 10.0
+	improvedFluidMultiplier = 2.0
 
